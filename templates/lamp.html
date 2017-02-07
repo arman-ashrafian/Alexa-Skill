@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <style>
+            #btnOn {
+                background-color: green;
+                color: black;
+                border: none;
+                padding: 20px 50px;
+                text-align: center;
+                display: inline-block;
+                font-size: 35px;
+            }
+
+            #btnOff {
+                background-color: red;
+                color: black;
+                border: none;
+                padding: 20px 45px;
+                text-align: center;
+                display: inline-block;
+                font-size: 35px;
+            }
+            body {
+                text-align: center;
+                background-color: #444;
+            }
+
+            h1 {
+                font-size: 100px;
+
+            }
+        </style>
+    </head>
+
+    <body>
+
+        <h1>Light Controller</h1><br><br>
+
+        <form action="/on/" method="POST">
+            <p> <input id="btnOn" type="submit" name="switch" value="ON"></p>
+        </form>
+
+        <form action="/off/" method="POST">
+            <p> <input id="btnOff" type="submit" name="switchOff" value="OFF"></p>
+        </form>
+
+    </body>
+
+</html>
