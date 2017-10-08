@@ -12,6 +12,9 @@
                 text-align: center;
                 display: inline-block;
                 font-size: 35px;
+                margin: 30px;
+                width: 90%;
+                height: 100px;
             }
 
             #btnOff {
@@ -22,10 +25,13 @@
                 text-align: center;
                 display: inline-block;
                 font-size: 35px;
+                margin: 30px;
+                width: 90%;
+                height: 100px;
             }
             body {
                 text-align: center;
-                background-color: #444;
+                background-color: #555;
             }
 
             h1 {
@@ -33,6 +39,11 @@
 
             }
         </style>
+        <!-- JQUERY -->
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+                integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+                crossorigin="anonymous">
+        </script>
     </head>
 
     <body>
@@ -40,11 +51,10 @@
         <h1>Light Controller</h1><br><br>
 
         <form action="/on/" method="POST">
-            <p> <input id="btnOn" type="submit" name="switch" value="ON"></p>
+            <input id="btnOn" type="submit" name="switch" value="ON">
         </form>
-
         <form action="/off/" method="POST">
-            <p> <input id="btnOff" type="submit" name="switchOff" value="OFF"></p>
+            <input id="btnOff" type="submit" name="switchOff" value="OFF">
         </form>
 
     </body>
